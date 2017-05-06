@@ -3,6 +3,10 @@
 len=-1
 
 if test $# -gt 0; then
+	if test $1 = -h; then
+		echo "usage: $0 [length]"
+		exit 0
+	fi
 	export len=$1
 fi
 
